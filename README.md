@@ -20,6 +20,8 @@ SOLID, DRY och KISS. Övriga knep för att förtydliga är också önskvärt.
 Skriv ihop en README.md eller README.txt och förklara kortfattat hur och varför ni har gjort eller inte gjort vad. 
 Lägg även till namnen på de som gjorde i labben i denna fil.
 
+Redovisning senast 2021-12-10
+
 ### Klassrummet
 Vid tillfälle på plats. Föredras.
 
