@@ -1,6 +1,4 @@
-﻿
-using ITHS_CC_Labb2;
-using Sebastian.Labb2;
+﻿using Sebastian.Labb2;
 
 OrderService orderService = new OrderService(new EmailService(), new Logger());
 
