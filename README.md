@@ -1,32 +1,20 @@
-﻿# Labb 2
+﻿#Labb2 
 
-I denna laboration skall vi pröva att refaktorera lite kod efter de regler vi lärt oss hittils. 
+##Denna Labb är endast utförd utav mig - Sebastian Romedahl
 
-Det är helt ok att ni jobbar i par.
+Först och främst har jag löst ut de privata metoderna för emailhantering och loggning 
+till två egna klasser med tillhörande interface för att underlätta implementationen. 
+Jag valde att göra detta så att man framöver enkelt kan lägga till funktionalitet för loggning mot t.ex databas.
 
-## Vad är målet med laborationen?
+För själva orderhanteringen har jag skapat tre separata klasser för de olika order-typerna.
+Dessa ärver av ett och samma interface som bara har en metod - nämligen Process metoden.
+För att bygga bort det if-statement vi hade i klassen så gjorde jag såhär. 
+Jag valde sen att skapa en lista av dessa olika ordertyper (interfaces) och beroende på vilken som är aktuell för given order så körs endast den.
+Det finns en liten risk här, skickas en order in med en fjärde ordertyp - så returnerar singleordefault null.
+Och det vill säga att för varje ny ordertyp behöver vi skapa en ny klass och lägga till i listan. Kanske inte helt optimalt.
 
-Vi ska använda oss av hela batteriet för att refaktorera koden till lättförståelig och förvaltningsbar kod enligt
-SOLID, DRY och KISS. Övriga knep för att förtydliga är också önskvärt.
+Det ligger en if-sats kvar i klassen metoden ProcessOrder, det blir lättare för mig att se vad som sker med den. Kanske det går att lösa på annat sätt?
 
-## Vad är kraven för laborationen?
-
-1. Koden ska vara lättförståelig, eller så lättförståelig som möjligt.
-2. Ni ska använda minst två av de fem principerna i SOLID.
-3. DRY ska användas där det passar.
-
-## Redovisning
-
-Skriv ihop en README.md eller README.txt och förklara kortfattat hur och varför ni har gjort eller inte gjort vad. 
-Lägg även till namnen på de som gjorde i labben i denna fil.
-
-Redovisning senast 2021-12-10
-
-### Klassrummet
-Vid tillfälle på plats. Föredras.
-
-### Teams
-Skriv till Dan så kan vi komma överrens om en tid.
-
-### GitHub
-Skicka github-länken till Dan
+Alternativet som jag tänkte på istället för skapandet av lista var att göra en form av "Chain-reaction" av metoder.
+Skapa en abstract klass som de olika ordertyperna får ärva av - ha någon form av koll där och om den inte uppfyller kraven, skicka till nästa osv.
+Detta hade nog resulterat i något snyggare kod, men jag fick inte helt till det.
