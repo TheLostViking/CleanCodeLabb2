@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITHS-CC-Labb2", "ITHS-CC-Labb2\ITHS-CC-Labb2.csproj", "{A5927F12-C981-4C3C-802A-F655AD1901B7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAFB5430-04B1-409B-BA47-6FC2190F98C3}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
@@ -12,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebastian.Labb2", "Sebastian.Labb2\Sebastian.Labb2.csproj", "{A8B72C0A-46BF-44C2-B6B2-4F0F1F46EFA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sebastian.Labb2", "Sebastian.Labb2\Sebastian.Labb2.csproj", "{A8B72C0A-46BF-44C2-B6B2-4F0F1F46EFA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5927F12-C981-4C3C-802A-F655AD1901B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5927F12-C981-4C3C-802A-F655AD1901B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5927F12-C981-4C3C-802A-F655AD1901B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5927F12-C981-4C3C-802A-F655AD1901B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A8B72C0A-46BF-44C2-B6B2-4F0F1F46EFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A8B72C0A-46BF-44C2-B6B2-4F0F1F46EFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B72C0A-46BF-44C2-B6B2-4F0F1F46EFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
